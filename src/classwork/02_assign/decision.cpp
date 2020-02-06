@@ -17,5 +17,5 @@ int gross_pay(int hours, int hourly_rate)
 	}
 	
 	
-	return hours * hourly_rate;
+
 }
