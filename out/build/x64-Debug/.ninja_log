@@ -137,3 +137,6 @@
 2117	2330	603325123	test/homework_test/02_decisions_test/hw_02_tests.exe	c66bed36a2dd1ad4
 5	2080	603325200	test/homework_test/02_decisions_test/CMakeFiles/hw_02_tests.dir/02_decisions_tests.cpp.obj	fbd6b180c3abbdba
 2081	2345	603325200	test/homework_test/02_decisions_test/hw_02_tests.exe	c66bed36a2dd1ad4
+2	1895	603325847	build.ninja	5ad79a414110fe86
+2	779	603325875	build.ninja	5ad79a414110fe86
+1	350	603325957	build.ninja	5ad79a414110fe86
