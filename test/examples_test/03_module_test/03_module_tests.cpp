@@ -2,6 +2,9 @@
 #include "catch.hpp"
 #include "while.h"
 #include "value_ref.h"
+#include "for_ranged.h"
+
+using std::string;
 TEST_CASE("Verify Test Configuration", "verification") {
 	REQUIRE(true == true);
 }
@@ -19,4 +22,20 @@ TEST_CASE("Test value and ref function") {
 
 	REQUIRE(num1 == 5);
 	REQUIRE(num2 == 50);
+}
+TEST_CASE("Test for ranged loop by value")
+{
+	string name = "joe";
+	loop_string_w_auto(name);
+
+	REQUIRE(name == "joe");
+
+}
+TEST_CASE("Test for ranged loop by reference")
+{
+	string name = "joe";
+	loop_string_w_auto_ref(name);
+
+	REQUIRE(name == "zzz");
+
 }
