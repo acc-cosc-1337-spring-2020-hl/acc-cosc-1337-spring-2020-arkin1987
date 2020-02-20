@@ -3,6 +3,7 @@
 #include "while.h"
 #include "value_ref.h"
 #include "for_ranged.h"
+#include "vec.h"
 
 using std::string;
 TEST_CASE("Verify Test Configuration", "verification") {
@@ -37,5 +38,23 @@ TEST_CASE("Test for ranged loop by reference")
 	loop_string_w_auto_ref(name);
 
 	REQUIRE(name == "zzz");
+
+}
+TEST_CASE("Test loop vector w index value")
+{
+	vector <int> nums{ 9, 10, 99, 5, 67 };
+	vector <int> expected{ 9, 10, 99, 5, 67 };
+	loop_vector_w_index(nums);
+
+	REQUIRE(nums == expected);
+
+}
+TEST_CASE("Test loop vector w index ref")
+{
+	vector <int> nums{ 9, 10, 99, 5, 67 };
+	vector <int> expected{ 0, 0, 0, 0, 0 };
+	loop_vector_w_index_ref(nums);
+
+	REQUIRE(nums == expected);
 
 }
