@@ -11,11 +11,11 @@ double get_gc_content(const string & dna);
 Write prototype for function get_reverse_string that 
 accepts a string parameter and returns a string
 */
-string get_reverse_string(string);
+string get_reverse_string(string dna);
 
 /*
 Write prototype for function get_dna_complement that
 accepts a string and returns a string
 */
 
-string get_dna_complement(string);
+string get_dna_complement(string &dna, char c1, char c2, char c3, char c4);
