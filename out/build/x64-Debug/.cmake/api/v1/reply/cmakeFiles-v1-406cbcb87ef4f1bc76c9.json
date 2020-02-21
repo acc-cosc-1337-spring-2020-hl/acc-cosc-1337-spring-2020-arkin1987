@@ -130,30 +130,6 @@
 			"path" : "src/examples/CMakeLists.txt"
 		},
 		{
-			"path" : "src/examples/03_module/CMakeLists.txt"
-		},
-		{
-			"path" : "src/examples/03_module/01_while/CMakeLists.txt"
-		},
-		{
-			"path" : "src/examples/03_module/02_for/CMakeLists.txt"
-		},
-		{
-			"path" : "src/examples/03_module/03_do_while/CMakeLists.txt"
-		},
-		{
-			"path" : "src/examples/03_module/04_for_ranged/CMakeLists.txt"
-		},
-		{
-			"path" : "src/examples/03_module/05_value_and_reference_params/CMakeLists.txt"
-		},
-		{
-			"path" : "src/examples/03_module/06_vectors/CMakeLists.txt"
-		},
-		{
-			"path" : "src/examples/03_module/07_vectors_for_ranged/CMakeLists.txt"
-		},
-		{
 			"path" : "src/homework/CMakeLists.txt"
 		},
 		{
@@ -167,9 +143,6 @@
 		},
 		{
 			"path" : "test/examples_test/CMakeLists.txt"
-		},
-		{
-			"path" : "test/examples_test/03_module_test/CMakeLists.txt"
 		},
 		{
 			"path" : "test/homework_test/CMakeLists.txt"
