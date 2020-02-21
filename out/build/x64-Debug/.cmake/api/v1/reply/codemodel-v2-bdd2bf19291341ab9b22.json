@@ -1,0 +1,491 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						14
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "src",
+					"childIndexes" : 
+					[
+						2,
+						3,
+						12
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src"
+				},
+				{
+					"build" : "src/classwork",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "src/classwork"
+				},
+				{
+					"build" : "src/examples",
+					"childIndexes" : 
+					[
+						4
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "src/examples"
+				},
+				{
+					"build" : "src/examples/03_module",
+					"childIndexes" : 
+					[
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 0,
+					"source" : "src/examples/03_module"
+				},
+				{
+					"build" : "src/examples/03_module/01_while",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 0,
+					"source" : "src/examples/03_module/01_while",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				},
+				{
+					"build" : "src/examples/03_module/02_for",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 0,
+					"source" : "src/examples/03_module/02_for",
+					"targetIndexes" : 
+					[
+						2,
+						3
+					]
+				},
+				{
+					"build" : "src/examples/03_module/03_do_while",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 0,
+					"source" : "src/examples/03_module/03_do_while",
+					"targetIndexes" : 
+					[
+						4,
+						5
+					]
+				},
+				{
+					"build" : "src/examples/03_module/04_for_ranged",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 0,
+					"source" : "src/examples/03_module/04_for_ranged",
+					"targetIndexes" : 
+					[
+						6,
+						7
+					]
+				},
+				{
+					"build" : "src/examples/03_module/05_value_and_reference_params",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 0,
+					"source" : "src/examples/03_module/05_value_and_reference_params",
+					"targetIndexes" : 
+					[
+						8,
+						9
+					]
+				},
+				{
+					"build" : "src/examples/03_module/06_vectors",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 0,
+					"source" : "src/examples/03_module/06_vectors",
+					"targetIndexes" : 
+					[
+						10,
+						11
+					]
+				},
+				{
+					"build" : "src/examples/03_module/07_vectors_for_ranged",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 0,
+					"source" : "src/examples/03_module/07_vectors_for_ranged",
+					"targetIndexes" : 
+					[
+						12,
+						13
+					]
+				},
+				{
+					"build" : "src/homework",
+					"childIndexes" : 
+					[
+						13
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "src/homework"
+				},
+				{
+					"build" : "src/homework/03_iteration",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 12,
+					"projectIndex" : 0,
+					"source" : "src/homework/03_iteration",
+					"targetIndexes" : 
+					[
+						15,
+						16
+					]
+				},
+				{
+					"build" : "test",
+					"childIndexes" : 
+					[
+						15,
+						16,
+						18
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "test"
+				},
+				{
+					"build" : "test/classwork_test",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 14,
+					"projectIndex" : 0,
+					"source" : "test/classwork_test"
+				},
+				{
+					"build" : "test/examples_test",
+					"childIndexes" : 
+					[
+						17
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 14,
+					"projectIndex" : 0,
+					"source" : "test/examples_test"
+				},
+				{
+					"build" : "test/examples_test/03_module_test",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 16,
+					"projectIndex" : 0,
+					"source" : "test/examples_test/03_module_test",
+					"targetIndexes" : 
+					[
+						14
+					]
+				},
+				{
+					"build" : "test/homework_test",
+					"childIndexes" : 
+					[
+						19
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 14,
+					"projectIndex" : 0,
+					"source" : "test/homework_test"
+				},
+				{
+					"build" : "test/homework_test/03_iteration_test",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 18,
+					"projectIndex" : 0,
+					"source" : "test/homework_test/03_iteration_test",
+					"targetIndexes" : 
+					[
+						17
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19
+					],
+					"name" : "cosc1337",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 5,
+					"id" : "ex_03_01_exe::@2b6036037def8c53ece3",
+					"jsonFile" : "target-ex_03_01_exe-Debug-c78310aee110c7a73c55.json",
+					"name" : "ex_03_01_exe",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "ex_03_01_library::@2b6036037def8c53ece3",
+					"jsonFile" : "target-ex_03_01_library-Debug-564957a41b04da2071c4.json",
+					"name" : "ex_03_01_library",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "ex_03_02_exe::@e4b972fb3eaa1577e56f",
+					"jsonFile" : "target-ex_03_02_exe-Debug-dd04ef7d1fc3daed6094.json",
+					"name" : "ex_03_02_exe",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "ex_03_02_library::@e4b972fb3eaa1577e56f",
+					"jsonFile" : "target-ex_03_02_library-Debug-6b9a9b31a8b75af20b58.json",
+					"name" : "ex_03_02_library",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "ex_03_03_exe::@7b3f7a32bf774ab23c5c",
+					"jsonFile" : "target-ex_03_03_exe-Debug-0b3cc32a4084480bb716.json",
+					"name" : "ex_03_03_exe",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "ex_03_03_library::@7b3f7a32bf774ab23c5c",
+					"jsonFile" : "target-ex_03_03_library-Debug-28171479addb3617b1fd.json",
+					"name" : "ex_03_03_library",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "ex_03_04_exe::@0ffa9b03a5dfc5622ce9",
+					"jsonFile" : "target-ex_03_04_exe-Debug-070eda12ee2a5fa3daa2.json",
+					"name" : "ex_03_04_exe",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "ex_03_04_library::@0ffa9b03a5dfc5622ce9",
+					"jsonFile" : "target-ex_03_04_library-Debug-003982e7ffa680e6f51f.json",
+					"name" : "ex_03_04_library",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "ex_03_05_exe::@5f7135c0ba2e944782b4",
+					"jsonFile" : "target-ex_03_05_exe-Debug-35dca55690a2e53bb756.json",
+					"name" : "ex_03_05_exe",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "ex_03_05_library::@5f7135c0ba2e944782b4",
+					"jsonFile" : "target-ex_03_05_library-Debug-4ffd6c8d6ee68cb203a7.json",
+					"name" : "ex_03_05_library",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 10,
+					"id" : "ex_03_06_exe::@5314de0ecb51eacee7b4",
+					"jsonFile" : "target-ex_03_06_exe-Debug-85b51bc98c91dafea484.json",
+					"name" : "ex_03_06_exe",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 10,
+					"id" : "ex_03_06_library::@5314de0ecb51eacee7b4",
+					"jsonFile" : "target-ex_03_06_library-Debug-94fa9f0e78af7396473c.json",
+					"name" : "ex_03_06_library",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 11,
+					"id" : "ex_03_07_exe::@7c8498d4a71fc6a52142",
+					"jsonFile" : "target-ex_03_07_exe-Debug-b7b5de34ec9f43d0ce43.json",
+					"name" : "ex_03_07_exe",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 11,
+					"id" : "ex_03_07_library::@7c8498d4a71fc6a52142",
+					"jsonFile" : "target-ex_03_07_library-Debug-92d5c253b2200ee443a2.json",
+					"name" : "ex_03_07_library",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 17,
+					"id" : "ex_03_tests::@3e5c8e731de3e22faed5",
+					"jsonFile" : "target-ex_03_tests-Debug-0a2c5033b75e647b0a8f.json",
+					"name" : "ex_03_tests",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 13,
+					"id" : "hw_03_exe::@02e066f6c0a510b3e0ec",
+					"jsonFile" : "target-hw_03_exe-Debug-5aae0b4f78d9c1208687.json",
+					"name" : "hw_03_exe",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 13,
+					"id" : "hw_03_library::@02e066f6c0a510b3e0ec",
+					"jsonFile" : "target-hw_03_library-Debug-744256e56db830f7bf10.json",
+					"name" : "hw_03_library",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 19,
+					"id" : "hw_03_tests::@ca0ca56a9be3d432fd1a",
+					"jsonFile" : "target-hw_03_tests-Debug-71bce99af19d96bc3be0.json",
+					"name" : "hw_03_tests",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Arkin/source/repos/acc-cosc-1337-spring-2020-arkin1987/out/build/x64-Debug",
+		"source" : "C:/Users/Arkin/source/repos/acc-cosc-1337-spring-2020-arkin1987"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

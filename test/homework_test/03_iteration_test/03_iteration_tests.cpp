@@ -24,14 +24,18 @@ TEST_CASE("Test function get_dna_complement") {
 	string dna2 = "CCCGGAAAAT";
 	string desired_result2 = "ATTTTCCGGG";
 
-	REQUIRE(get_dna_complement(dna1,'A','T','C','G') == desired_result1);
-	REQUIRE(get_dna_complement(dna2, 'A', 'T', 'C', 'G') == desired_result2);
+	REQUIRE(get_dna_complement(dna1) == desired_result1);
+	REQUIRE(get_dna_complement(dna2) == desired_result2);
+
 }
 
 TEST_CASE("Test function get_gc_content") {
 	string dna1 = "AGCTATAG";
 	double desired_result1 = .375;
 
+	string dna2 = "CGCTATAG";
+	double desired_result2 = .50;
 
 	REQUIRE(get_gc_content(dna1) == desired_result1);
+	REQUIRE(get_gc_content(dna2) == desired_result2);
 }

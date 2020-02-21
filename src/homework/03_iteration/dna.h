@@ -18,4 +18,11 @@ Write prototype for function get_dna_complement that
 accepts a string and returns a string
 */
 
-string get_dna_complement(string &dna, char c1, char c2, char c3, char c4);
+string get_dna_complement(string dna);
+
+
+
+/*
+I have included a header for the menu function
+*/
+string menu(int num);

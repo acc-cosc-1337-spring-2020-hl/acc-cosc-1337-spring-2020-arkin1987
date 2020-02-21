@@ -8,10 +8,12 @@ Return quotient.
 */
 double get_gc_content(const string &dna)
 {   
-    int length_of_dna = dna.size();
-    int count_G_C = 0;
+    double length_of_dna = dna.size();
+    double count_G_C = 0;
     for (int i = 0; i < length_of_dna; i++) {
-        if (dna.at(i) == 'G' || 'C')
+        if (dna[i] == 'G')
+            count_G_C++;
+        else if (dna[i] == 'C')
             count_G_C++;
     }
     
@@ -36,7 +38,7 @@ string get_reverse_string(string dna)
 {
     
     string rev_dna;
-    int i;
+    
     for (int i = dna.size() - 1; i > -1; i--) 
     {
         rev_dna = rev_dna.append(1, dna[i]);
@@ -61,36 +63,53 @@ c. return string
 */
 
 
-string get_dna_complement(string &dna, char c1, char c2, char c3, char c4)
+string get_dna_complement(string dna)
 {
 
     string reverse_of_dna = get_reverse_string(dna);
 
-
-    int l = reverse_of_dna.length();
-
-    for (int i = 0; i < l ; i++)
+   
+    for (int i = 0; i < reverse_of_dna.length(); i++)
     {
-        if (reverse_of_dna[i] == c1)
+        switch (reverse_of_dna[i])
         {
-            reverse_of_dna[i] = c2;
-        }
-        else if (reverse_of_dna[i] == c2)
-        {
-            reverse_of_dna[i] = c1;
-        }
-        else if (reverse_of_dna[i] == c3)
-        {
-            reverse_of_dna[i] = c4;
-        }
-        else if (reverse_of_dna[i] == c4)
-        {
-            reverse_of_dna[i] = c3;
+        case 'A':
+            reverse_of_dna[i] = 'T';
+            break;
+        case 'T':
+            reverse_of_dna[i] = 'A';
+            break;
+        case 'C':
+            reverse_of_dna[i] = 'G';
+            break;
+        case 'G':
+            reverse_of_dna[i] = 'C';
+            break;
         }
     }
 
-    string dna_compliment_results = "";
+    return reverse_of_dna;
+}
 
 
-    return dna_compliment_results;
+/*
+Menu Function uses user input to detrmine whether to get GC content
+or get DNA Compliment
+*/
+string menu(int num)
+{
+    string result = "";
+
+    switch (num)
+    {
+    case 1:
+        result = 1;
+        break;
+    case 2:
+        result = 2;
+        break;
+    default:
+        result = "Invalid Option";
+    }
+    return result;
 }
