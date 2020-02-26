@@ -12,7 +12,13 @@ vector of intsparameter that returns the max value in a vector
 
 int get_max_from_vector(const vector<int>& nums)
 {
-	return 0;
+	int max = nums[0];
+	for (int i = 1; i < nums.size(); i++) {
+		if (nums[i] > max) {
+			max = nums[i];
+		}
+	}
+	return max;
 }
 
 /*
@@ -49,7 +55,33 @@ number is prime.
 */
 vector<int> vector_of_primes(int value)  // use pushback here
 {
-	return vector<int>();
+	vector <int> prime_holder;
+	for (int i = 2; i <= value; i++) {
+		if (is_prime(i)) {
+			prime_holder.push_back(i);
+		}
+	}
+
+
+	return vector<int>(prime_holder);
+}
+/*
+I have written a function called get_primes_from_vector
+with a const referece vector of ints parameter that returns
+a vector containing all the prime numbers in the given vector
+*/
+vector<int> get_primes_from_vector(const vector<int>& nums)
+{
+	vector <int> prime_holder;
+	int prime_int_test = 0;
+	for (int i = 0; i < nums.size(); i++) {
+		if (is_prime(nums[i]))  {
+			prime_int_test = nums[i];
+			prime_holder.push_back(prime_int_test);
+		}
+	}
+
+	return vector<int>(prime_holder);
 }
 
 

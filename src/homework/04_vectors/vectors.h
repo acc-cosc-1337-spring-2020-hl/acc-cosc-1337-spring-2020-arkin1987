@@ -27,3 +27,10 @@ the number
 @return vector of ints containing prime values up to a value
 */
 vector <int> vector_of_primes(int value);
+
+/*
+I have written a function called get_primes_from_vector
+with a const referece vector of ints parameter that returns
+a vector containing all the prime numbers in the given vector
+*/
+vector <int> get_primes_from_vector(const vector <int>& nums);
