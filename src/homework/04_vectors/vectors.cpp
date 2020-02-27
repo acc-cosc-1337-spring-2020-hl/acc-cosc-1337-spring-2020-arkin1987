@@ -1,4 +1,5 @@
 #include "vectors.h"
+#include <iostream>
 using std::vector;
 /*
 Write a value return function get_max_from_vector with a const reference 
@@ -63,7 +64,7 @@ vector<int> vector_of_primes(int value)  // use pushback here
 	}
 
 
-	return vector<int>(prime_holder);
+	return prime_holder;
 }
 /*
 I have written a function called get_primes_from_vector
@@ -83,5 +84,10 @@ vector<int> get_primes_from_vector(const vector<int>& nums)
 
 	return vector<int>(prime_holder);
 }
+
+
+
+
+
 
 

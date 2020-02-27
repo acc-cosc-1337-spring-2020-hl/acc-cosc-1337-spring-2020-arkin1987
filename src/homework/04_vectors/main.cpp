@@ -1,6 +1,7 @@
 #include <iostream>
 #include "vectors.h"
 
+
 using std::cout;
 using std::cin;
 using std::vector;
@@ -35,6 +36,7 @@ int main()
 		int user_number;
 		cin >> user_number;
 		cout << "Prime numbers in your integer: ";
+		vector_of_primes(user_number);
 		
 	}
 
