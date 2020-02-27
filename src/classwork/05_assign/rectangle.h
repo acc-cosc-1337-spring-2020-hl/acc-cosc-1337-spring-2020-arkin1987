@@ -6,8 +6,8 @@ that calculates area of the rectangle.  The class has 3 int private variables ar
 class rectangle
 {
 public:
-	rectangle(int w, int h) : width{ w }, height{ h } {calculate_area();} // BankAccount is a Constructor
-	int get_area()const { return area; }  // const protects balance
+	rectangle(int w, int h) : width{ w }, height{ h } {calculate_area();} 
+	int get_area()const { return area; }  
 
 private:
 	int area; // assign and create variable, direct initialization

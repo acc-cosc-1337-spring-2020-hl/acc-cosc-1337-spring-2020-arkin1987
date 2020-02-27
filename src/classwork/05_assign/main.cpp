@@ -16,10 +16,12 @@ Iterate the vector and display the Area for each Rectangle on one line and the t
 */
 int main()
 {
-	vector <rectangle> rectangles{ rectangle(4,5), rectangle(10,10),
-	rectangle(100,10) };
-	for (auto rect : rectangles) {
-		cout << rect.get_area(); // out of time
-	}
+	rectangle rectangle1(4, 5), rectangle2 (10,10), rectangle3(100,10);
+	cout << rectangle1.get_area()<<"\n"<< rectangle2.get_area()<<"\n" << rectangle3.get_area()<<"\n";
+	int totalarea;
+	totalarea = rectangle1.get_area() + rectangle2.get_area() + rectangle3.get_area();
+	cout << "Sum of areas:"<< totalarea;
+
+	
 	return 0;
 }
