@@ -34,6 +34,10 @@ TEST_CASE("Test function vector_of_primes") {
 	REQUIRE(vector_of_primes(50) == nums2);
 
 }
+/*
+This function isn't used in main, but I tested it and it works 
+as expected
+*/
 TEST_CASE("Test function get_primes_from_vector") {
 	vector <int> nums1{ 2, 3, 8, 10, 15, 16, 12, 18, 20 };
 	vector <int> expected1{ 2, 3};

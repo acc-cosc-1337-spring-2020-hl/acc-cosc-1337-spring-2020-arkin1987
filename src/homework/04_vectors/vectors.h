@@ -31,7 +31,8 @@ vector <int> vector_of_primes(int value);
 /*
 I have written a function called get_primes_from_vector
 with a const referece vector of ints parameter that returns
-a vector containing all the prime numbers in the given vector
+a vector containing all the prime numbers in the given vector.
+Wrote this because I misread the problem, but it works so I'm just going to leave it.
 */
 vector <int> get_primes_from_vector(const vector <int>& nums);
 

@@ -54,22 +54,27 @@ Example given number 10 returns a vector with elements 2,3,5,7,
 Make sure to use the is_prime function to determine if current 
 number is prime.
 */
-vector<int> vector_of_primes(int value)  // use pushback here
+vector<int> vector_of_primes(int value)  
 {
 	vector <int> prime_holder;
 	for (int i = 2; i <= value; i++) {
 		if (is_prime(i)) {
-			prime_holder.push_back(i);
+			prime_holder.push_back(i); // use pushback here
+
 		}
+
 	}
 
-
+	for (auto &n : prime_holder) { // Couldn't cout the vector in main. Have to do something to overload cout operator.
+		std::cout << n << "\n";  // Came up with this solution but I'm sure there is a better way.
+	}
 	return prime_holder;
 }
 /*
 I have written a function called get_primes_from_vector
 with a const referece vector of ints parameter that returns
-a vector containing all the prime numbers in the given vector
+a vector containing all the prime numbers in the given vector.
+Wrote this because I misread the problem, but it works so I'm just going to leave it.
 */
 vector<int> get_primes_from_vector(const vector<int>& nums)
 {
@@ -82,7 +87,7 @@ vector<int> get_primes_from_vector(const vector<int>& nums)
 		}
 	}
 
-	return vector<int>(prime_holder);
+	return prime_holder;
 }
 
 

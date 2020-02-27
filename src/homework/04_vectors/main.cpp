@@ -19,29 +19,37 @@ Program continues until user decides to exit.
 */
 int main() 
 {
-	vector <int> given_vector{ 8, 4, 20, 88, 66, 99 };
-	cout << "Here is a vector of integers\n{8, 4, 20, 88, 66, 99}\n"; 
-	cout << "Input 1 to get the max value in this vector \nInput 2 to pick your own number and see the prime numbers it contains\n";
 	int user_option;
-	cin >> user_option;
-	
-	
+	do {
 
 
-	if (user_option == 1) {
-		cout << "The max value of the vector is: " << get_max_from_vector(given_vector);
-	}
-	else if (user_option == 2) {
-		cout << "Input an integer: \n";
-		int user_number;
-		cin >> user_number;
-		cout << "Prime numbers in your integer: ";
-		vector_of_primes(user_number);
+		vector <int> given_vector{ 8, 4, 20, 88, 66, 99 }; //directions are a little different from blackboard. I tried to follow directions in main.cpp
+		cout << "Here is a vector of integers\n{8, 4, 20, 88, 66, 99}\n";
+		cout << "Input 1 to get the max value in this vector \nInput 2 to pick your own number and see the prime numbers it contains\n"
+			"Input 3 to end the program\n";
 		
-	}
+		cin >> user_option;
 
 
 
+
+		if (user_option == 1) {
+			cout << "The max value of the vector is: " << get_max_from_vector(given_vector)<<"\n";
+		}
+		else if (user_option == 2) {
+			cout << "Input an integer: \n";
+			int user_number;
+			cin >> user_number;
+			cout << "Prime numbers in your integer: ";
+			vector_of_primes(user_number);
+		}
+		else {
+			cout << "You have chosen to end the program";
+			break;
+		}
+
+
+	} while (user_option == 1 || user_option == 2);
 
 
 	return 0;
