@@ -65,9 +65,6 @@ vector<int> vector_of_primes(int value)
 
 	}
 
-	for (auto &n : prime_holder) { // Couldn't cout the vector in main. Have to do something to overload cout operator.
-		std::cout << n << "\n";  // Came up with this solution but I'm sure there is a better way.
-	}
 	return prime_holder;
 }
 /*

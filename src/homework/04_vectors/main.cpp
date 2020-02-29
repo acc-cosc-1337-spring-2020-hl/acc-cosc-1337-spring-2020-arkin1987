@@ -41,7 +41,14 @@ int main()
 			int user_number;
 			cin >> user_number;
 			cout << "Prime numbers in your integer: ";
-			vector_of_primes(user_number);
+			auto primes = vector_of_primes(user_number);
+
+			for (auto prime : primes) 
+			{
+				cout << prime <<" ";
+			}
+			cout << "\n\n";
+
 		}
 		else {
 			cout << "You have chosen to end the program";
