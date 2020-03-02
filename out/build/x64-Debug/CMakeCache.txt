@@ -196,6 +196,12 @@ cosc1337_BINARY_DIR:STATIC=C:/Users/Arkin/source/repos/acc-cosc-1337-spring-2020
 //Value Computed by CMake
 cosc1337_SOURCE_DIR:STATIC=C:/Users/Arkin/source/repos/acc-cosc-1337-spring-2020-arkin1987
 
+//Value Computed by CMake
+hw_01_library_BINARY_DIR:STATIC=C:/Users/Arkin/source/repos/acc-cosc-1337-spring-2020-arkin1987/out/build/x64-Debug/src/homework/01_expressions
+
+//Value Computed by CMake
+hw_01_library_SOURCE_DIR:STATIC=C:/Users/Arkin/source/repos/acc-cosc-1337-spring-2020-arkin1987/src/homework/01_expressions
+
 
 ########################
 # INTERNAL cache entries
@@ -285,7 +291,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MT
 CMAKE_MT-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=18
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=26
 //Platform information initialized
 CMAKE_PLATFORM_INFO_INITIALIZED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_RC_COMPILER

@@ -34,8 +34,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
+  include("C:/Users/Arkin/source/repos/acc-cosc-1337-spring-2020-arkin1987/out/build/x64-Debug/src/homework/01_expressions/cmake_install.cmake")
+  include("C:/Users/Arkin/source/repos/acc-cosc-1337-spring-2020-arkin1987/out/build/x64-Debug/src/homework/02_decisions/cmake_install.cmake")
   include("C:/Users/Arkin/source/repos/acc-cosc-1337-spring-2020-arkin1987/out/build/x64-Debug/src/homework/03_iteration/cmake_install.cmake")
   include("C:/Users/Arkin/source/repos/acc-cosc-1337-spring-2020-arkin1987/out/build/x64-Debug/src/homework/04_vectors/cmake_install.cmake")
+  include("C:/Users/Arkin/source/repos/acc-cosc-1337-spring-2020-arkin1987/out/build/x64-Debug/src/homework/tic_tac_toe/cmake_install.cmake")
 
 endif()
 
