@@ -38,6 +38,6 @@ TEST_CASE("Test start game with O game flow") {
 	TicTacToe game;
 	game.start_game("O");
 	REQUIRE(game.get_player() == "O");
-	game.mark_board(2);						//doesn't move player to O
+	game.mark_board(2);						//doesn't move player to X
 	REQUIRE(game.get_player() == "X");
 }

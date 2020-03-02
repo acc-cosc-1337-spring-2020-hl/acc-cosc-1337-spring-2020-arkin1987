@@ -5,7 +5,7 @@ class Error
 {
 public:
 	Error(std::string msg) : message{ msg } {}					//Constructor
-	std::string get_message()const { return message; }
+	std::string get_message() { return message; }
 private:
 	std::string message;
 
@@ -19,7 +19,7 @@ public:
 	std::string get_player()const { return player; }
 private:
 	std::string player;
-	void set_next_player(std::string player);
+	void set_next_player();
 	
 
 };

@@ -16,35 +16,31 @@ void TicTacToe::start_game(std::string first_player)
 
 void TicTacToe::mark_board(int position)
 {
-	if (position >= 1 && position <= 9)
-	{
-		position;
-	}
-	else
+	if (position <1 || position > 9)
 	{
 		throw Error("Postion must be 1-9\n");
 	}
-	if (player == "")
+	else if (player == "")
 	{
 		throw Error("Must start game first\n");
 	}
 	else
 	{
-		set_next_player(player);// call set_next_player
+		set_next_player();	// call set_next_player
 	}
 }
 
 
 
-void TicTacToe::set_next_player(std::string player)
+void TicTacToe::set_next_player()
 {
 	if (player == "X")
 	{
-		"O";
+		player == "O";
 	}
 	else
 	{
-		"X";
+		player =="X";
 	}
 }
 
