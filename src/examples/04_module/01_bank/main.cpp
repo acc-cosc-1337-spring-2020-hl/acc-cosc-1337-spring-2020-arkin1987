@@ -6,6 +6,9 @@ using std::vector;
 
 int main()
 {
+
+	
+
 	vector<BankAccount> accounts{ BankAccount(100),
 	BankAccount(200), BankAccount(300) };
 

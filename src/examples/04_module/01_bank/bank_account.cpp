@@ -1,5 +1,6 @@
-//bank_account.cpp
 #include "bank_account.h"
+//bank_account.cpp
+
 
 void BankAccount::deposit(int amount)
 {
@@ -28,5 +29,21 @@ void BankAccount::withdraw(int amount)
 	else 
 	{
 		balance -= amount;
+	}
+}
+
+void BankAccount::open(int amount)
+{
+	if (balance > 0)
+	{
+		throw InvalidAmount("account already open");
+	}
+	if (amount >= min_balance_to_open)
+	{
+		balance += amount;
+	}
+	else
+	{
+		throw InvalidAmount("Not enough $$ to open account");
 	}
 }

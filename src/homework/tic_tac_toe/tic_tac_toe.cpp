@@ -26,7 +26,7 @@ void TicTacToe::mark_board(int position)
 	}
 	else
 	{
-		set_next_player();	// call set_next_player
+		set_next_player();	
 	}
 }
 
@@ -36,11 +36,11 @@ void TicTacToe::set_next_player()
 {
 	if (player == "X")
 	{
-		player == "O";
+		player = "O";
 	}
 	else
 	{
-		player =="X";
+		player ="X";
 	}
 }
 

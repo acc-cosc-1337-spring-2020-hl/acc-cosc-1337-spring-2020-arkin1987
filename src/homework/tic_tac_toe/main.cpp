@@ -5,7 +5,7 @@ using std::cout; using std::string; using std::cin;
 int main() 
 {
 	string first_player;
-	cout << "Pick X or O\n";
+	cout << "First Player select X or O\n";
 	cin >> first_player;
 	TicTacToe game;
 	try 
@@ -20,7 +20,7 @@ int main()
 	char choice;
 	do
 	{
-		cout << "choose position\n";
+		cout << "choose position 1-9\n";
 		int position;
 		cin >> position;
 		try
