@@ -6,9 +6,11 @@ using std::vector;
 
 int main()
 {
-
-	
-
+	BankAccount a(50), b(10);
+	display_balance(a); 
+	cout << a;	//Overloading << operator
+	std::cin >> a; // overloading >> operator
+	display_balance(a);
 	vector<BankAccount> accounts{ BankAccount(100),
 	BankAccount(200), BankAccount(300) };
 
