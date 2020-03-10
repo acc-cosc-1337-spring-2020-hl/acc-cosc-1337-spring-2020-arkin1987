@@ -15,16 +15,12 @@ string menu(int num)
 	
 	switch (num)
 	{
-	case 1:
-		result = "Option 1";
-		break;
-	case 2:
+	case 10:
+	case 20:
 		result = "Option 2";
 		break;
-	case 3:
-		result = "Option 3";
-		break;
-	case 4:
+	case 30:
+	case 40:
 		result = "Option 4";
 		break;
 	default:

@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Users/Arkin/source/repos/acc-cosc-1337-spring-2020-arkin1987/out/install/x64-Debug")
+  set(CMAKE_INSTALL_PREFIX "C:/Users/Arkin/Source/Repos/acc-cosc-1337-spring-2020-arkin1987/out/install/x64-Debug")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,6 +34,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
+  include("C:/Users/Arkin/source/repos/acc-cosc-1337-spring-2020-arkin1987/out/build/x64-Debug/test/examples_test/02_module_test/cmake_install.cmake")
+  include("C:/Users/Arkin/source/repos/acc-cosc-1337-spring-2020-arkin1987/out/build/x64-Debug/test/examples_test/03_module_test/cmake_install.cmake")
   include("C:/Users/Arkin/source/repos/acc-cosc-1337-spring-2020-arkin1987/out/build/x64-Debug/test/examples_test/04_module_test/cmake_install.cmake")
 
 endif()
