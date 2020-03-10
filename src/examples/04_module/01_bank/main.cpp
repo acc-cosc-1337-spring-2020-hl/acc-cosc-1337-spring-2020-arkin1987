@@ -1,4 +1,4 @@
-#include "bank_account.h"
+#include "checking_account.h"	//include this now
 #include <iostream>
 #include <vector>
 using std::cout; 
@@ -6,7 +6,8 @@ using std::vector;
 
 int main()
 {
-	BankAccount a(50), b(10);
+	CheckingAccount c;
+	CheckingAccount a(50), b(10);
 	display_balance(a); 
 	cout << a;	//Overloading << operator
 	std::cin >> a; // overloading >> operator

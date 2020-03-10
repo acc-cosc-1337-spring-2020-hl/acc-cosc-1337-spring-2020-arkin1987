@@ -17,8 +17,11 @@ public:
 	friend void display_balance(const BankAccount& b);	// pass bank account reference read only
 	friend std::ostream& operator << (std::ostream& out, const BankAccount& b);
 	friend std::istream& operator >>(std::istream& in, BankAccount& b);
+
+protected:
+	int balance{ 0 };	 // assign and create variable, direct initialization
 private:
-	int balance{ 0 }; // assign and create variable, direct initialization
+	
 	const int min_balance_to_open{ 25 };
 	static double rate;
 	static double init_rate() { return .025; }

@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/Arkin/source/repos/acc-cosc-1337-spring-2020-arkin1987/test/homework_test
+# Install script for directory: C:/Users/9419322/source/repos/acc-cosc-1337-spring-2020-arkin1987/test/homework_test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Users/Arkin/source/repos/acc-cosc-1337-spring-2020-arkin1987/out/install/x64-Debug")
+  set(CMAKE_INSTALL_PREFIX "C:/Users/9419322/Source/Repos/acc-cosc-1337-spring-2020-arkin1987/out/install/x64-Debug")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,11 +34,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/Arkin/source/repos/acc-cosc-1337-spring-2020-arkin1987/out/build/x64-Debug/test/homework_test/01_expressions_test/cmake_install.cmake")
-  include("C:/Users/Arkin/source/repos/acc-cosc-1337-spring-2020-arkin1987/out/build/x64-Debug/test/homework_test/02_decisions_test/cmake_install.cmake")
-  include("C:/Users/Arkin/source/repos/acc-cosc-1337-spring-2020-arkin1987/out/build/x64-Debug/test/homework_test/03_iteration_test/cmake_install.cmake")
-  include("C:/Users/Arkin/source/repos/acc-cosc-1337-spring-2020-arkin1987/out/build/x64-Debug/test/homework_test/04_vectors_test/cmake_install.cmake")
-  include("C:/Users/Arkin/source/repos/acc-cosc-1337-spring-2020-arkin1987/out/build/x64-Debug/test/homework_test/tic_tac_toe_test/cmake_install.cmake")
+  include("C:/Users/9419322/source/repos/acc-cosc-1337-spring-2020-arkin1987/out/build/x64-Debug/test/homework_test/01_expressions_test/cmake_install.cmake")
+  include("C:/Users/9419322/source/repos/acc-cosc-1337-spring-2020-arkin1987/out/build/x64-Debug/test/homework_test/02_decisions_test/cmake_install.cmake")
+  include("C:/Users/9419322/source/repos/acc-cosc-1337-spring-2020-arkin1987/out/build/x64-Debug/test/homework_test/03_iteration_test/cmake_install.cmake")
+  include("C:/Users/9419322/source/repos/acc-cosc-1337-spring-2020-arkin1987/out/build/x64-Debug/test/homework_test/04_vectors_test/cmake_install.cmake")
+  include("C:/Users/9419322/source/repos/acc-cosc-1337-spring-2020-arkin1987/out/build/x64-Debug/test/homework_test/tic_tac_toe_test/cmake_install.cmake")
 
 endif()
 

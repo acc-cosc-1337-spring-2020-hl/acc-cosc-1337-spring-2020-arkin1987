@@ -38,6 +38,29 @@ TEST_CASE("Test start game with O game flow") {
 	TicTacToe game;
 	game.start_game("O");
 	REQUIRE(game.get_player() == "O");
-	game.mark_board(2);						
+	game.mark_board(2);
 	REQUIRE(game.get_player() == "X");
+}
+TEST_CASE("Test game over when board full") {
+	TicTacToe game;
+	game.start_game("X");
+
+	game.mark_board(1);
+	REQUIRE(game.game_over == false);
+	game.mark_board(2);
+	REQUIRE(game.game_over == false);
+	game.mark_board(3);
+	REQUIRE(game.game_over == false);
+	game.mark_board(4);
+	REQUIRE(game.game_over == false);
+	game.mark_board(5);
+	REQUIRE(game.game_over == false);
+	game.mark_board(6);
+	REQUIRE(game.game_over == false);
+	game.mark_board(7);
+	REQUIRE(game.game_over == false);
+	game.mark_board(8);
+	REQUIRE(game.game_over == false);
+	game.mark_board(9);
+	REQUIRE(game.game_over == true);
 }
