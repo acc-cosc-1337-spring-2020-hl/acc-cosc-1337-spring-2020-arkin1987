@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/Arkin/source/repos/acc-cosc-1337-spring-2020-arkin1987/test/classwork_test/04_assign_test
+# Install script for directory: C:/Users/9419322/source/repos/acc-cosc-1337-spring-2020-arkin1987/test/classwork_test/04_assign_test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Users/Arkin/Source/Repos/acc-cosc-1337-spring-2020-arkin1987/out/install/x64-Debug")
+  set(CMAKE_INSTALL_PREFIX "C:/Users/9419322/Source/Repos/acc-cosc-1337-spring-2020-arkin1987/out/install/x64-Debug")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

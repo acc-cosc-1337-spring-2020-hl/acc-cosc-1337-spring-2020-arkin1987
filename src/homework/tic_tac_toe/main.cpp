@@ -26,6 +26,7 @@ int main()
 		try
 		{
 			game.mark_board(position);
+			game.display_board();
 		}
 		catch (Error e)
 		{
@@ -34,10 +35,9 @@ int main()
 		
 		
 		
-		cout << "Continue?";
-		cin >> choice;
 
-	} while (choice == 'y');
+
+	} while (!game.game_over());
 
 
 
