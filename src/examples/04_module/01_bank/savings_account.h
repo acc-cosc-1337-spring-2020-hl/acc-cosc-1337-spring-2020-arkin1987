@@ -1,7 +1,7 @@
 //savings_account.h
 #include"bank_account.h"
 #include "checking_account.h"
-
+/*
 class SavingsAccount : public BankAccount
 {
 public: 
@@ -9,3 +9,4 @@ public:
 	SavingsAccount(int b) : BankAccount(b) {};
 	int get_balance() const {return balance * (1/12 * .025); }
 };
+*/

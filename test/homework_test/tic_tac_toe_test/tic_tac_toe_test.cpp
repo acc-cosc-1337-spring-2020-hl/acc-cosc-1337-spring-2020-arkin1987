@@ -64,3 +64,25 @@ TEST_CASE("Test game over when board full") {
 	game.mark_board(9);
 	REQUIRE(game.game_over() == true);
 }
+
+TEST_CASE("Test win by first column", "[X wins first column]") {
+
+	TicTacToe game;
+	game.start_game("X");
+	REQUIRE(game.game_over() == false);
+	game.mark_board(1);//X        
+	REQUIRE(game.game_over() == false);
+	game.mark_board(2);//O          
+	REQUIRE(game.game_over() == false);
+	game.mark_board(4);//X          
+	REQUIRE(game.game_over() == false);
+	game.mark_board(5);//O          
+	REQUIRE(game.game_over() == false);
+	game.mark_board(7);//X
+	//X wins
+	REQUIRE(game.game_over() == true);
+
+
+
+
+}

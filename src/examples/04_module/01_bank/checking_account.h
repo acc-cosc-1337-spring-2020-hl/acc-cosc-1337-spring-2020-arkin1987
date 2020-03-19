@@ -1,5 +1,6 @@
 //checking_account.h
 #include "bank_account.h"
+/*
 class CheckingAccount : public BankAccount	//inheritance
 {
 public:
@@ -8,3 +9,4 @@ public:
 	int get_balance() { return balance * (1 + get_rate()); }  // override bank account get balance
 
 };
+*/

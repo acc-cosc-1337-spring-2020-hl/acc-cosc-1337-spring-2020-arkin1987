@@ -3,7 +3,7 @@
 //#ifndef BANK_ACCOUNT_H	// header guards
 //#define BANK_ACCOUNT_H
 #include <iostream>
-
+/*
 class BankAccount
 {
 public:
@@ -41,3 +41,4 @@ private:
 //double BankAccount::rate = init_rate();
 
 //#endif // !BANK_ACCOUNT_H
+*/
