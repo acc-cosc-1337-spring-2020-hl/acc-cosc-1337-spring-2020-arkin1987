@@ -4,8 +4,27 @@
 using std::cout;
 bool TicTacToe::game_over()
 {
-	
-	return check_board_full();
+	if (check_column_win() == true)
+	{
+		return true;
+	}
+	else if (check_row_win() == true)
+	{
+		return true;
+	}
+	else if (check_diagonal_win() == true)
+	{
+		return true;
+	}
+	else if (check_board_full() == true)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+
 }
 
 void TicTacToe::start_game(std::string first_player)
