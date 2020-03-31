@@ -4,11 +4,11 @@
 TEST_CASE("Verify Test Configuration", "verification") {
 	REQUIRE(true == true);
 }
-/*
+
 
 TEST_CASE("Test bank account get_balance") {
 	
-	CheckingAccount account(150);
+	BankAccount account(150);
 
 	
 	REQUIRE(account.get_balance() == 150);
@@ -71,4 +71,3 @@ TEST_CASE("Test BankAccount get rate") {
 	BankAccount account;
 	REQUIRE(account.get_rate()== 0.025);
 }
-*/

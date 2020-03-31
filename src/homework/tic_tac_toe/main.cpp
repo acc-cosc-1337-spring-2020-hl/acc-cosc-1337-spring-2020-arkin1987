@@ -47,12 +47,5 @@ int main()
 	}while (choice == 'y');
 	
 	
-	
-	
-	
-
-
-
-
 	return 0;
 }

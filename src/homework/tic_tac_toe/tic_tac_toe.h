@@ -1,6 +1,8 @@
 //h
 #include <string>
 #include <vector>
+#ifndef TIC_TAC_TOE_H	// header guards
+#define TIC_TAC_TOE_H
 using std::vector;
 using std::string;
 class Error
@@ -37,3 +39,5 @@ private:
 
 
 };
+
+#endif 

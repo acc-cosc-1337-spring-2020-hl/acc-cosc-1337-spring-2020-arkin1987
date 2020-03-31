@@ -1,7 +1,7 @@
 #include "bank_account.h"
 //bank_account.cpp
 #include <iostream>
-/*
+
 void BankAccount::deposit(int amount)
 {
 	if (amount > 0)
@@ -71,4 +71,3 @@ std::istream & operator>>(std::istream & in, BankAccount & b)
 	b.deposit(amount);
 	return in;
 }
-*/

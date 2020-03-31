@@ -9,7 +9,7 @@ using std::vector;
 using std::reference_wrapper;
 int main()
 {
-	/*
+	
 	SavingsAccount s(100);
 	CheckingAccount c(100);
 
@@ -20,7 +20,7 @@ int main()
 	}
 
 	
-	CheckingAccount c;
+	
 	CheckingAccount a(50), b(10);
 	display_balance(a); 
 	cout << a;	//Overloading << operator
@@ -47,6 +47,6 @@ int main()
 	{
 		cout << e.get_message();
 	}
-	*/
+	
 	return 0;
 }

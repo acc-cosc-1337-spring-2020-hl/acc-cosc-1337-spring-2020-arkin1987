@@ -1,15 +1,15 @@
 //bank_account.h
 #include <string>
-//#ifndef BANK_ACCOUNT_H	// header guards
-//#define BANK_ACCOUNT_H
+#ifndef BANK_ACCOUNT_H	// header guards
+#define BANK_ACCOUNT_H
 #include <iostream>
-/*
+
 class BankAccount
 {
 public:
 	BankAccount()= default;	// default constructor
 	explicit BankAccount(int b) : balance{ b } {}; // BankAccount is a Constructor
-	virtual int get_balance()const {return balance; }  // const protects balance
+	virtual int get_balance()const {return balance; }  // const protects balance, virtual function
 	void deposit(int amount);
 	void withdraw(int amount);
 	void open(int amount);
@@ -38,7 +38,6 @@ private:
 
 
 };
-//double BankAccount::rate = init_rate();
 
-//#endif // !BANK_ACCOUNT_H
-*/
+
+#endif //!BANK_ACCOUNT_H
