@@ -16,7 +16,7 @@ int main()
 	a->get_balance();
 
 	delete a;	// need to delete when using pointer
-	*/
+	
 
 
 
@@ -31,7 +31,7 @@ int main()
 	{
 		cout << account -> get_balance() << "\n";
 	}
-
+	*/
 	
 	/*
 	CheckingAccount a(50), b(10);
