@@ -1,6 +1,8 @@
 #define CATCH_CONFIG_MAIN  // This tells Catch to provide a main() - only do this in one cpp file
 #include "catch.hpp"
 #include "checking_account.h"
+#include "savings_account.h"
+#include <memory>
 TEST_CASE("Verify Test Configuration", "verification") {
 	REQUIRE(true == true);
 }
@@ -16,7 +18,7 @@ TEST_CASE("Test bank account get_balance") {
 
 TEST_CASE("Test bank account deposit") {
 
-	BankAccount account(150);
+	unique_ptr<BankAccount> s = make_unique<SavingsAccount>(100);
 	REQUIRE(account.get_balance() == 150);
 	
 	REQUIRE_THROWS_AS(account.deposit(-50), InvalidAmount);
@@ -25,6 +27,7 @@ TEST_CASE("Test bank account deposit") {
 	account.deposit(50);
 	REQUIRE(account.get_balance() == 200);
 }
+/*
 
 TEST_CASE("Test bank account withdraw") {
 

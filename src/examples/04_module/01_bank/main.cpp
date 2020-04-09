@@ -4,6 +4,7 @@
 #include <vector>
 #include <functional>
 #include <memory>
+#include "atm.h"
 
 using std::cout; 
 using std::vector;
@@ -11,7 +12,20 @@ using std::unique_ptr; using std::make_unique;
 //using std::reference_wrapper;
 int main()
 {
-	/*
+	unique_ptr<BankAccount> s = make_unique<SavingsAccount>(100);
+	unique_ptr<BankAccount> c = make_unique<CheckingAccount>(100);
+
+	vector <unique_ptr<BankAccount>> acts;
+	acts.push_back(std::move(s));
+	acts.push_back(std::move(c));	//polymorphism
+	
+	Customer cust(acts);
+	ATM atm(cust);
+
+	cout << atm;
+									
+									
+									/*
 	BankAccount* a = new BankAccount();	// pointer creates dynamic memory
 	a->get_balance();
 

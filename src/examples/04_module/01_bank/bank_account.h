@@ -9,7 +9,7 @@ class BankAccount
 public:
 	BankAccount()= default;	// default constructor
 	explicit BankAccount(int b) : balance{ b } {}; // BankAccount is a Constructor
-	virtual int get_balance()const = 0;  // const protects balance, virtual function
+	virtual int get_balance()const { return balance;}  // const protects balance, virtual function
 	void deposit(int amount);
 	void withdraw(int amount);
 	void open(int amount);

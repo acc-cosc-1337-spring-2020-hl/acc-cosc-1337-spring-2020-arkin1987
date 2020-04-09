@@ -40,7 +40,7 @@ void TicTacToe::mark_board(int position)
 	{
 		throw Error("Must start game first\n");
 	}
-	else
+	else if (game_over() == false)
 	{
 		pegs[position - 1] = player;
 		set_next_player();	
@@ -98,9 +98,13 @@ void TicTacToe::set_winner()
 	{
 		winner = "O";
 	}
-	else
+	else if (player == "O")
 	{
 		winner = "X";
+	}
+	else
+	{
+		winner = "C";
 	}
 }
 
@@ -189,3 +193,21 @@ bool TicTacToe::check_diagonal_win()
 	return false;
 }
 
+std::ostream& operator<<(std::ostream& out, const TicTacToe& pegs)
+{
+
+	return out;
+	// TODO: insert return statement here
+}
+
+std::istream& operator>>(std::istream& in, TicTacToe& b)
+{
+
+	int position;
+	cout << "choose position 1-9\n";
+	
+	in >> position;
+	b.mark_board(position);
+	return in;
+	// TODO: insert return statement here
+}
