@@ -24,8 +24,8 @@ public:
 	std::string get_player()const { return player; }  
 	void display_board()const;
 	string get_winner() { return winner;}
-	friend std::ostream& operator << (std::ostream& out, const TicTacToe& b);
-	friend std::istream& operator >>(std::istream& position, TicTacToe& b);
+	friend std::ostream& operator << (std::ostream& out, const TicTacToe& d);
+	friend std::istream& operator >>(std::istream& in, TicTacToe& b);
 	
 private:
 	bool check_board_full();

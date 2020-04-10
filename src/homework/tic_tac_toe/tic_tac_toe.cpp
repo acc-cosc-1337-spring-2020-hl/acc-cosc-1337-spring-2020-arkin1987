@@ -193,9 +193,15 @@ bool TicTacToe::check_diagonal_win()
 	return false;
 }
 
-std::ostream& operator<<(std::ostream& out, const TicTacToe& pegs)
+std::ostream& operator<<(std::ostream& out, const TicTacToe& d)
 {
+	out << "\n";
+	for (int i = 0; i < 9; i += 3)
+	{
+		cout << d.pegs[i] << "|" << d.pegs[i + 1] << "|" << d.pegs[i + 2] << "\n";
 
+	}
+		
 	return out;
 	// TODO: insert return statement here
 }
