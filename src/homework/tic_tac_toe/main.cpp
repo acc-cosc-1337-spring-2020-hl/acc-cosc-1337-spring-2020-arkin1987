@@ -35,8 +35,8 @@ int main()
 		} while (!game.game_over());
 		
 		game_manager.save_game(game);
-		cout << game_manager;
-		cout <<  "winner is: " <<game.get_winner();
+		cout << game_manager << "\n";
+		
 		
 		cout << "Press y to play again";
 		cin >> choice;

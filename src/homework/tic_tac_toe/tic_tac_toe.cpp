@@ -47,16 +47,7 @@ void TicTacToe::mark_board(int position)
 	}
 }
 
-void TicTacToe::display_board() const
-{
-	for (int i = 0; i < 9; i += 3)
-	{
-		cout << pegs[i] << "|" << pegs[i + 1] << "|" << pegs[i + 2] << "\n";
 
-	}
-
-	cout << "\n";
-}
 
 
 
@@ -203,7 +194,7 @@ std::ostream& operator<<(std::ostream& out, const TicTacToe& d)
 	}
 		
 	return out;
-	// TODO: insert return statement here
+	
 }
 
 std::istream& operator>>(std::istream& in, TicTacToe& b)
@@ -215,5 +206,5 @@ std::istream& operator>>(std::istream& in, TicTacToe& b)
 	in >> position;
 	b.mark_board(position);
 	return in;
-	// TODO: insert return statement here
+	
 }

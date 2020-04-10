@@ -19,17 +19,17 @@ class TicTacToe
 {
 public:
 	bool game_over();
-	void start_game(std::string first_player);
+	void start_game(string first_player);
 	void mark_board(int position);
-	std::string get_player()const { return player; }  
-	void display_board()const;
-	string get_winner()const { return winner;}
+	string get_player()const { return player; }  
+	
+	string get_winner()const { return winner; }
 	friend std::ostream& operator << (std::ostream& out, const TicTacToe& d);
 	friend std::istream& operator >>(std::istream& in, TicTacToe& b);
 	
 private:
 	bool check_board_full();
-	std::string player;
+	string player;
 	string winner = "";
 	void set_next_player();
 	vector <string> pegs{ 9, " " };
