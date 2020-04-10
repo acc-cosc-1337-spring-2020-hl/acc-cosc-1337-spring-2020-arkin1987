@@ -20,13 +20,11 @@ int main()
 		game.start_game(first_player);
 		do
 		{
-			cout << "choose position 1-9\n";
-			int position;
-			cin >> position;
+			cin >> game;
 			try
 			{
-				game.mark_board(position);
-				game.display_board();
+				
+				cout << game;
 			}
 			catch (Error e)
 			{
@@ -38,7 +36,7 @@ int main()
 		
 		game_manager.save_game(game);
 		cout << game_manager;
-		
+		cout <<  "winner is: " <<game.get_winner();
 		
 		cout << "Press y to play again";
 		cin >> choice;

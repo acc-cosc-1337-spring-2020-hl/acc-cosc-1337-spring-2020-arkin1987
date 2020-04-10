@@ -57,6 +57,7 @@ TEST_CASE("Test game over if 9 slots are selected or no winner") {
 	REQUIRE(game.game_over() == false);
 	game.mark_board(8);
 	REQUIRE(game.game_over() == true);
+	
 }
 
 TEST_CASE("Test win by first column", "[X wins first column]") {
@@ -75,6 +76,7 @@ TEST_CASE("Test win by first column", "[X wins first column]") {
 	game.mark_board(7);//X
 	//X wins
 	REQUIRE(game.game_over() == true);
+	//REQUIRE(game.get_winner() == "X");
 }
 
 TEST_CASE("Test win by second column", "[X wins second column]") {
@@ -93,6 +95,7 @@ TEST_CASE("Test win by second column", "[X wins second column]") {
 	game.mark_board(8);//X
 	//X wins
 	REQUIRE(game.game_over() == true);
+	//REQUIRE(game.get_winner() == "X");
 }
 
 TEST_CASE("Test win by third column", "[X wins third column]") {
@@ -111,6 +114,7 @@ TEST_CASE("Test win by third column", "[X wins third column]") {
 	game.mark_board(9);//X
 	//X wins
 	REQUIRE(game.game_over() == true);
+	//REQUIRE(game.get_winner() == "X");
 }
 
 TEST_CASE("Test win by first row", "[X wins first row]") {
@@ -129,6 +133,7 @@ TEST_CASE("Test win by first row", "[X wins first row]") {
 	game.mark_board(3);//X
 	//X wins
 	REQUIRE(game.game_over() == true);
+	//REQUIRE(game.get_winner() == "X");
 }
 
 TEST_CASE("Test win by second row", "[X wins second row]") {
@@ -147,6 +152,7 @@ TEST_CASE("Test win by second row", "[X wins second row]") {
 	game.mark_board(6);//X
 	//X wins
 	REQUIRE(game.game_over() == true);
+	//REQUIRE(game.get_winner() == "X");
 }
 
 TEST_CASE("Test win by third row", "[X wins third row]") {
@@ -165,6 +171,7 @@ TEST_CASE("Test win by third row", "[X wins third row]") {
 	game.mark_board(9);//X
 	//X wins
 	REQUIRE(game.game_over() == true);
+	//REQUIRE(game.get_winner() == "X");
 }
 
 TEST_CASE("Test win by diagonal from top left", "[X wins diagonal from top left]") {
@@ -183,6 +190,7 @@ TEST_CASE("Test win by diagonal from top left", "[X wins diagonal from top left]
 	game.mark_board(9);//X
 	//X wins
 	REQUIRE(game.game_over() == true);
+	//REQUIRE(game.get_winner() == "X");
 }
 
 TEST_CASE("Test win by diagonal from bottom left", "[X wins diagonal from bottom left]") {
@@ -201,6 +209,7 @@ TEST_CASE("Test win by diagonal from bottom left", "[X wins diagonal from bottom
 	game.mark_board(3);//X
 	//X wins
 	REQUIRE(game.game_over() == true);
+	//REQUIRE(game.get_winner() == "X");
 }
 
 

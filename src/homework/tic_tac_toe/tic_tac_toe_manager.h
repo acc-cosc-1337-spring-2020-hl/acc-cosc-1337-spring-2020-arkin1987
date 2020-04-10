@@ -9,14 +9,14 @@ using std::vector;
 
 class TicTacToeManager {
 public:
-	void save_game(const TicTacToe b);
-	friend std::ostream& operator<<(std::ostream& out, const TicTacToeManager& manager);
-	int get_winner() { return x_win, o_win, ties; }
+	void save_game( TicTacToe b);
+	friend std::ostream& operator<<(std::ostream& out, TicTacToeManager& manager);
+	int get_winner_from_private() { return x_win, o_win, ties; }
 private:
 	vector<TicTacToe> games;
-	int x_win{ 0 };
-	int o_win{ 0 };
-	int ties{ 0 };
+	int x_win = { 0 };
+	int o_win = { 0 };
+	int ties = { 0 };
 	void update_winner_count(string winner);
 	
 };
