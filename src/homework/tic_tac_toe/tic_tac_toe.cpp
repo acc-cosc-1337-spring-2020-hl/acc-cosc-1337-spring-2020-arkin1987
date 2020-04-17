@@ -1,18 +1,21 @@
 //cpp
 #include "tic_tac_toe.h"
 #include <iostream>
+#include <math.h>
 using std::cout;
 bool TicTacToe::game_over()
 {
-	if (check_column_win() == true || check_row_win() == true || check_diagonal_win() == true || check_board_full() == true)
+	if (check_column_win() == true || check_row_win() == true || check_diagonal_win() == true )
 	{
 		return true;
 	}
 
-	else
+	else if (check_board_full() == true)
 	{
-		return false;
+		winner = "C";
+		return true;
 	}
+	return false;
 
 }
 
@@ -39,6 +42,7 @@ void TicTacToe::mark_board(int position)
 	else if (player == "")
 	{
 		throw Error("Must start game first\n");
+
 	}
 	else if (game_over() == false)
 	{
