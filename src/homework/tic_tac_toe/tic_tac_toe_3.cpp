@@ -30,23 +30,6 @@ Win diagonally
 6 7 8
 */
 
-std::ostream& operator<<(std::ostream& out, TicTacToe3& game)
-{
-	out << "\n";
-	for (int i = 0; i < 9; i += 3) {
-		out << game.pegs[i] << " | " << game.pegs[i + 1] << " | " << game.pegs[i + 2] << "\n";
-	}
-	return out;
-}
-
-std::istream& operator>>(std::istream& in, TicTacToe3& game)
-{
-	int position;
-
-	in >> position;
-	game.mark_board(position);
-	return in;
-}
 
 bool TicTacToe3::check_column_win()
 {
