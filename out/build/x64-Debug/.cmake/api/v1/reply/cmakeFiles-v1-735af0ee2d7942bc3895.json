@@ -136,6 +136,36 @@
 			"path" : "src/examples/CMakeLists.txt"
 		},
 		{
+			"path" : "src/examples/11_module/CMakeLists.txt"
+		},
+		{
+			"path" : "src/examples/11_module/01_ref_pointers/CMakeLists.txt"
+		},
+		{
+			"path" : "src/examples/11_module/02_dynamic_memory/CMakeLists.txt"
+		},
+		{
+			"path" : "src/examples/11_module/03_memory_leak/CMakeLists.txt"
+		},
+		{
+			"path" : "src/examples/11_module/04_dangling_pointer/CMakeLists.txt"
+		},
+		{
+			"path" : "src/examples/11_module/05_raii/CMakeLists.txt"
+		},
+		{
+			"path" : "src/examples/11_module/06_destructors/CMakeLists.txt"
+		},
+		{
+			"path" : "src/examples/11_module/07_class_copy/CMakeLists.txt"
+		},
+		{
+			"path" : "src/examples/11_module/08_rule_of_3/CMakeLists.txt"
+		},
+		{
+			"path" : "src/examples/11_module/09_rule_of_5/CMakeLists.txt"
+		},
+		{
 			"path" : "src/homework/CMakeLists.txt"
 		},
 		{

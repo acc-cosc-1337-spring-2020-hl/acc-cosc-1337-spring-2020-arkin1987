@@ -319,3 +319,15 @@
 503	678	608801814	src/homework/tic_tac_toe/tic_tac_toe_exe.exe	14ffc3ac1e50029b
 3	484	608801836	src/homework/tic_tac_toe/CMakeFiles/tic_tac_toe_exe.dir/main.cpp.obj	98fa93093f601eed
 3	110	608801841	src/homework/tic_tac_toe/tic_tac_toe_exe.exe	14ffc3ac1e50029b
+1	2911	609126466	build.ninja	5ad79a414110fe86
+2	983	609126478	build.ninja	5ad79a414110fe86
+9	119	609126479	src/examples/11_module/06_destructors/CMakeFiles/ex_11_06_exe.dir/main.cpp.obj	55b64af25d9de67f
+9	381	609126509	src/examples/11_module/09_rule_of_5/CMakeFiles/ex_11_09_exe.dir/main.cpp.obj	b912ea1aea412d93
+5	383	609126509	src/examples/11_module/04_dangling_pointer/CMakeFiles/ex_11_04_exe.dir/main.cpp.obj	a10bc4245669b926
+7	563	609126509	src/examples/11_module/06_destructors/ex_11_06_exe.exe	990522010745099a
+383	579	609126509	src/examples/11_module/04_dangling_pointer/ex_11_04_exe.exe	e6eb44badff6383a
+381	666	609126509	src/examples/11_module/09_rule_of_5/ex_11_09_exe.exe	b021dce31879849d
+5	447	609126559	src/examples/11_module/04_dangling_pointer/CMakeFiles/ex_11_04_exe.dir/main.cpp.obj	a10bc4245669b926
+447	626	609126559	src/examples/11_module/04_dangling_pointer/ex_11_04_exe.exe	e6eb44badff6383a
+5	429	609126662	src/examples/11_module/04_dangling_pointer/CMakeFiles/ex_11_04_exe.dir/main.cpp.obj	a10bc4245669b926
+429	541	609126662	src/examples/11_module/04_dangling_pointer/ex_11_04_exe.exe	e6eb44badff6383a
