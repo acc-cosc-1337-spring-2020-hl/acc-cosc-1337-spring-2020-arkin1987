@@ -38,25 +38,6 @@ Win diagonally
 
 */
 
-std::ostream& operator<<(std::ostream& out, TicTacToe4& game)
-{
-	out << "\n";
-	for (int i = 0; i < 16; i += 4) {
-		out << game.pegs[i] << " | " << game.pegs[i + 1] << " | " << game.pegs[i + 2] << " | "
-			<<game.pegs[i + 3] <<"\n";
-	}
-	return out;
-}
-
-std::istream& operator>>(std::istream& in, TicTacToe4& game)
-{
-	int position;
-
-	in >> position;
-	game.mark_board(position);
-	return in;
-}
-
 bool TicTacToe4::check_column_win()
 {
 	string last_player;
@@ -94,7 +75,11 @@ bool TicTacToe4::check_row_win()
 {
 	{
 		for (int i = 0; i < 16; i += 4) {
-			if (player == pegs[i] && player == pegs[i + 1] && player == pegs[i + 2] && player == pegs[i + 3]) {
+			if ("X" == pegs[i] && "X" == pegs[i + 1] && "X" == pegs[i + 2] && "X" == pegs[i + 3]) {
+				return true;
+			}
+
+			else if ("O" == pegs[i] && "O" == pegs[i + 1] && "O" == pegs[i + 2] && "O" == pegs[i + 3]) {
 				return true;
 			}
 

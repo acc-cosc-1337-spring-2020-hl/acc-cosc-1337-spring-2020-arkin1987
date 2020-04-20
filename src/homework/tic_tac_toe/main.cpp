@@ -1,73 +1,79 @@
-#include "tic_tac_toe.h"
 #include "tic_tac_toe_manager.h"
 #include "tic_tac_toe_3.h"
 #include "tic_tac_toe_4.h"
-#include <iostream>
-#include <string>
-using std::cout; using std::string; using std::cin; 
-int main() 
-{
-	char choice = 'y';
-	TicTacToeManager game_manager;
-	TicTacToe3 game3;
-	TicTacToe4 game4;
-	vector<std::reference_wrapper<TicTacToe>> game_choice{ game3, game4 };
-	string first_player;
+#include<iostream>
+#include<functional>
 
-	do {
+using std::cout; using std::cin; using std::string;
+
+int main()
+{
+	TicTacToeManager manager;
+	string cont;
+	std::vector<std::reference_wrapper<TicTacToe>> games;
+
+	do
+	{
+		int game_type;
+		cout << "\nTictactoe 3 or 4?";
+		cin >> game_type;
 		TicTacToe3 game3;
 		TicTacToe4 game4;
-		vector<std::reference_wrapper<TicTacToe>> game_choice{ game3, game4 };
-		
-		int board_size;
-		cout << "4 for 4X4 game or 3 for 3X3";
-		cin >> board_size;
-		if (board_size == 4) {
 
-			game_manager.games.push_back(game_choice.at(0));
-			TicTacToe4 game4;
+		if (game_type == 3)
+		{
+			games.push_back(game3);
 		}
-		else if (board_size == 3) {
-			
-			game_manager.games.push_back(game_choice.at(1));
-			TicTacToe3 game3;
+		else if (game_type == 4)
+		{
+			games.push_back(game4);
 		}
-		std::reference_wrapper<TicTacToe> last_game = game_manager.games.back();
+
+		std::reference_wrapper<TicTacToe> game = games.back();
+
+		string player = "Y";
+
+		while (!(player == "O" || player == "X"))
+		{
+			try
+			{
+				cout << "Enter player: ";
+				cin >> player;
+
+				game.get().start_game(player);
+			}
+			catch (Error e)
+			{
+				cout << e.get_message();
+			}
+		}
+
+		int choice = 1;
 
 		do
 		{
-			try {
-				cout <<  "First Player select X or O\n";
-				cin >> first_player;
-				last_game.get().start_game(first_player);
+			try
+			{
+				cin >> game.get();
+				cout << game.get();
 			}
-			catch (Error e) {
+			catch (Error e)
+			{
 				cout << e.get_message();
 			}
 
-		}while (first_player != "X" && first_player != "O");
-		do {
-			cin >> last_game.get();
-			cout << last_game.get();
-		} while (!(last_game.get().game_over() == true));
+		} while (!game.get().game_over());
 
-		game_manager.save_game(last_game.get());
-		cout << game_manager;
+		manager.save_game(game.get());
 
+		cout << "\nWinner: " << game.get().get_winner() << "\n";
 
+		cout << "Enter Y to play again: ";
+		cin >> cont;
 
-		
-		
-		cout << "Press y to play again";
-		cin >> choice;
+	} while (cont == "Y");
 
-		
+	cout << manager;
 
-
-
-
-	}while (choice == 'y');
-	
-	
 	return 0;
 }
