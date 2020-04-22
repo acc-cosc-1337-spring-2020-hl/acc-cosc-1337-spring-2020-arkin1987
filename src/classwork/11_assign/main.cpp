@@ -4,6 +4,9 @@
 
 int main() 
 {
+	use_vector();
 	
+	
+
 	return 0;
 }

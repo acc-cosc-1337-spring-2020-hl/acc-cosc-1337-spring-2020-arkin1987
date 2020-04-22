@@ -5,13 +5,14 @@
 using std::cout;
 bool TicTacToe::game_over()
 {
-	if (check_column_win() == true || check_row_win() == true || check_diagonal_win() == true )
+	if (check_column_win()|| check_row_win() || check_diagonal_win())
 	{
-		return true;
 		set_winner();
+		return true;
+		
 	}
 
-	else if (check_board_full() == true)
+	else if (check_board_full())
 	{
 		winner = "C";
 		return true;
@@ -22,13 +23,9 @@ bool TicTacToe::game_over()
 
 void TicTacToe::start_game(std::string first_player)
 {
-	if (first_player == "X" || first_player == "O")
+	if (!(first_player == "X" || first_player == "O"))
 	{
-		first_player;
-	}
-	else
-	{
-		throw Error("Player must be X or O\n");
+		throw Error("Player must be X or O.");
 	}
 	player = first_player;
 	clear_board();
@@ -60,25 +57,31 @@ void TicTacToe::mark_board(int position)
 
 bool TicTacToe::check_board_full()
 {
-	for (auto peg : pegs)
+	for (std::size_t i = 0; i < pegs.size(); ++i)
 	{
-		if (peg == " ")
+		if (pegs[i] == " ")
 		{
 			return false;
 		}
 	}
+
 	return true;
 }
 
 void TicTacToe::set_next_player()
+
 {
 	if (player == "X")
 	{
 		player = "O";
 	}
+	else if (player == "O")
+	{
+		player = "X";
+	}
 	else
 	{
-		player ="X";
+		throw Error("Player Unknown.");
 	}
 }
 
