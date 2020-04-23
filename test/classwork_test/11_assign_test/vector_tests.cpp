@@ -29,3 +29,16 @@ TEST_CASE("Test class copy w heap variables")
 	REQUIRE(v1[1] == 5);
 	REQUIRE(v2[1] == 0);
 }
+/*
+TEST_CASE("Test class copy w 2 instances of Vector")
+{
+	Vector v1(3);
+	Vector v2(3);
+	v2 = v1;
+	v1[1] = 1;
+
+	REQUIRE(v1[1] !=  v2[1]);
+	REQUIRE(v1[1] == 1);
+	REQUIRE(v2[1] == 0);
+}
+*/

@@ -1,5 +1,5 @@
 #include "vector.h"
-#include "iostream"
+#include <iostream>
 
 Vector::Vector(size_t sz)
 	: size {sz}, nums{new int [sz]} // how much memory to allocate
@@ -17,6 +17,22 @@ Vector::Vector(const Vector& v)
 
 		nums[i] = v[i];
 	}
+}
+
+Vector& Vector::operator=(const Vector& v)
+{
+	int* temp = new int[v.size];
+
+	for (size_t i = 0; i < v.size; ++i) 
+	{
+		temp[i] = v[i];
+	}
+	delete[] nums;
+
+	nums = temp;
+	size = v.size;
+
+	return *this;
 }
 
 Vector::~Vector()
