@@ -29,9 +29,9 @@ std::ostream& operator<<(std::ostream& out, const TicTacToeManager& m)
 	out << "\n";
 	for (auto& game : m.games)
 	{
-		out << game << "\n";
+		out << "Winner of last game: " <<game->get_winner() << "\n";
 	}
-
+	out << "Win History";
 	out << "\nO wins: " << m.o_wins << "\n";
 	out << "X wins: " << m.x_wins << "\n";
 	out << "Ties: " << m.ties << "\n";
