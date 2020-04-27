@@ -1,5 +1,5 @@
 //temperature.h
-/*
+
 #ifndef TEMPERATURE_H
 #define TEMPERATURE_H
 
@@ -18,4 +18,3 @@ private:
 
 
 #endif // !TEMPERATURE_H
-*/

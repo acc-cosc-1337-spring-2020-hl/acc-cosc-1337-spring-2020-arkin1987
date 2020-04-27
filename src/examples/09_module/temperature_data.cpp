@@ -1,5 +1,5 @@
 //temperature_data.cpp
-/*
+
 #include "temperature_data.h"
 
 
@@ -40,4 +40,3 @@ std::vector<Temperature> TemperatureData::get_temps() const
 	read_file.close();
 	return temps;
 }
-*/

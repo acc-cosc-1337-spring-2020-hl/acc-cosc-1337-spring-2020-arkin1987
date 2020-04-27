@@ -1,5 +1,5 @@
 //temperature_data.h
-/*
+
 #include "temperature.h"
 #include <string>
 #include <fstream>
@@ -19,4 +19,3 @@ private:
 };
 
 #endif // !TEMPERATURE_DATA_H
-*/

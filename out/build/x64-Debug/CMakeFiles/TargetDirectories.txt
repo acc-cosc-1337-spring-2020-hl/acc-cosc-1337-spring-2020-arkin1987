@@ -25,6 +25,11 @@ C:/Users/Arkin/source/repos/acc-cosc-1337-spring-2020-arkin1987/out/build/x64-De
 C:/Users/Arkin/source/repos/acc-cosc-1337-spring-2020-arkin1987/out/build/x64-Debug/src/examples/CMakeFiles/rebuild_cache.dir
 C:/Users/Arkin/source/repos/acc-cosc-1337-spring-2020-arkin1987/out/build/x64-Debug/src/examples/CMakeFiles/test.dir
 C:/Users/Arkin/source/repos/acc-cosc-1337-spring-2020-arkin1987/out/build/x64-Debug/src/examples/CMakeFiles/edit_cache.dir
+C:/Users/Arkin/source/repos/acc-cosc-1337-spring-2020-arkin1987/out/build/x64-Debug/src/examples/09_module/CMakeFiles/ex_09_library.dir
+C:/Users/Arkin/source/repos/acc-cosc-1337-spring-2020-arkin1987/out/build/x64-Debug/src/examples/09_module/CMakeFiles/rebuild_cache.dir
+C:/Users/Arkin/source/repos/acc-cosc-1337-spring-2020-arkin1987/out/build/x64-Debug/src/examples/09_module/CMakeFiles/test.dir
+C:/Users/Arkin/source/repos/acc-cosc-1337-spring-2020-arkin1987/out/build/x64-Debug/src/examples/09_module/CMakeFiles/ex_09_exe.dir
+C:/Users/Arkin/source/repos/acc-cosc-1337-spring-2020-arkin1987/out/build/x64-Debug/src/examples/09_module/CMakeFiles/edit_cache.dir
 C:/Users/Arkin/source/repos/acc-cosc-1337-spring-2020-arkin1987/out/build/x64-Debug/src/examples/11_module/CMakeFiles/rebuild_cache.dir
 C:/Users/Arkin/source/repos/acc-cosc-1337-spring-2020-arkin1987/out/build/x64-Debug/src/examples/11_module/CMakeFiles/test.dir
 C:/Users/Arkin/source/repos/acc-cosc-1337-spring-2020-arkin1987/out/build/x64-Debug/src/examples/11_module/CMakeFiles/edit_cache.dir
