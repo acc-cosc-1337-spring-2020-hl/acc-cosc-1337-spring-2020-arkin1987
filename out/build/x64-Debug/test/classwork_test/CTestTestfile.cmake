@@ -6,3 +6,4 @@
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("04_assign_test")
 subdirs("05_assign_test")
+subdirs("11_assign_test")

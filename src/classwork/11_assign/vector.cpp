@@ -34,6 +34,29 @@ Vector& Vector::operator=(const Vector& v)
 
 	return *this;
 }
+/*
+Use move source pointer
+point move source pointer to nothing
+*/
+Vector::Vector(Vector&& v)
+	: size{v.size}, nums{v.nums}
+{
+	v.size = 0;
+	v.nums = nullptr;
+
+}
+
+Vector& Vector::operator=(Vector&& v)
+{
+	delete nums;
+	nums = v.nums;
+	size = v.size;
+	v.nums = nullptr; 
+	v.size = 0;
+
+	return *this;
+}
+
 
 Vector::~Vector()
 {
@@ -44,4 +67,10 @@ Vector::~Vector()
 void use_vector()
 {
 	Vector v(3);
+}
+
+Vector get_vector()
+{
+	Vector v = Vector(3);
+	return v;
 }
