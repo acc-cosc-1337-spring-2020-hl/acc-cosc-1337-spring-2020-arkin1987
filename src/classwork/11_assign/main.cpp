@@ -1,5 +1,8 @@
 #include "vector.h"
 #include<iostream>
+#include <vector>
+using std::vector;
+
 
 int square(int n)
 {
@@ -9,9 +12,10 @@ int square(int n)
 int main() 
 {
 
+
 	Vector v1(3);
 
-	v1 = get_vector();
+	v1.Reserve(6);
 	
 
 	return 0;
