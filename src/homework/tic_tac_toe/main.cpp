@@ -11,7 +11,8 @@ using std::unique_ptr; using std::make_unique;
 int main()
 {
 	char cont = 'y';
-	unique_ptr <TicTacToeManager> manager = make_unique<TicTacToeManager>();
+	TicTacToeData data;
+	unique_ptr <TicTacToeManager> manager = make_unique<TicTacToeManager>(data);
 	string player;
 	int game_type;
 	

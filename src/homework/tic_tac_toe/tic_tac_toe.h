@@ -20,8 +20,9 @@ private:
 class TicTacToe
 {
 public:
-	TicTacToe(int size) : pegs(size* size, " ") {};
-	TicTacToe(std::vector<string> p, string win) {}; // more here
+	TicTacToe(vector<string> p , string win) : pegs{p}, winner{win} {}
+	explicit TicTacToe(int size) : pegs(size* size, " ") {};
+	
 	std::vector<string> get_pegs() { return pegs; }
 	bool game_over();
 	void start_game(std::string first_player);
