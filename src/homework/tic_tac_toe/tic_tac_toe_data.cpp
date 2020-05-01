@@ -6,7 +6,7 @@
 
 using std::vector;  
 
-void TicTacToeData::save_games(std::vector<std::unique_ptr<TicTacToe>>& games)
+void TicTacToeData::save_games(const std::vector<std::unique_ptr<TicTacToe>>& games)
 {
 	std::ofstream file_out(file_name, std::ios_base::trunc);
 	
@@ -48,7 +48,7 @@ std::vector<std::unique_ptr<TicTacToe>> TicTacToeData::get_games() const
 					pegs.push_back(marker);
 				}
 			}
-			if (pegs.size() < 10)
+			if (pegs.size() <= 9)
 			{
 				std::unique_ptr <TicTacToe> game = std::make_unique<TicTacToe3>(pegs, winner);
 				boards.push_back(std::move(game));
@@ -61,8 +61,8 @@ std::vector<std::unique_ptr<TicTacToe>> TicTacToeData::get_games() const
 		}
 
 
-
+		read_file.close();
 	}
-	read_file.close();
+	
 	return boards;
 }

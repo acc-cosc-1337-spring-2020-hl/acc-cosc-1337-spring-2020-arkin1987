@@ -29,7 +29,7 @@ void TicTacToeManager::update_winner_count(std::string winner)
 	{
 		o_wins++;
 	}
-	else
+	else if (winner == "C")
 	{
 		ties++;
 	}
@@ -37,7 +37,7 @@ void TicTacToeManager::update_winner_count(std::string winner)
 
 std::ostream& operator<<(std::ostream& out, const TicTacToeManager& m)
 {
-	out << "\n";
+	
 	for (auto& game : m.games)
 	{
 		out << *game;
