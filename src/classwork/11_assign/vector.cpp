@@ -21,6 +21,22 @@ Vector::Vector(const Vector& v)
 
 Vector& Vector::operator=(const Vector& v)
 {
+	if (this == &v) // prevent self copy
+	{
+		return *this;
+	}
+
+	if (v.size <= space) // enough space; no need to create new memory
+	{
+		for (size_t i = 0; i < v.size; i++)
+		{
+			nums[i] = v.nums[i];
+		}
+		size = v.size;
+		
+		return *this;
+	}
+	
 	int* temp = new int[v.size];
 
 	for (size_t i = 0; i < v.size; ++i) 
