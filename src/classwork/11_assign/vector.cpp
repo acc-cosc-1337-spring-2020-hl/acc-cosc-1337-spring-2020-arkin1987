@@ -1,8 +1,13 @@
 #include "vector.h"
 #include <iostream>
 
+Vector::Vector()
+	: size{0}, nums{nullptr}, space{0}
+{
+}
+
 Vector::Vector(size_t sz)
-	: size {sz}, nums{new int [sz]} // how much memory to allocate
+	: size{ sz }, nums{ new int[sz] }, space{ sz } // how much memory to allocate
 {
 	for (size_t i = 0; i < sz; ++i)
 	{

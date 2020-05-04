@@ -5,6 +5,7 @@
 class Vector {
 
 public:
+	Vector();
 	Vector(size_t sz);
 	Vector(const Vector& v); // copy constructor RULE OF 3
 	Vector& operator =(const Vector& v);//copy assignment RULE OF 3
