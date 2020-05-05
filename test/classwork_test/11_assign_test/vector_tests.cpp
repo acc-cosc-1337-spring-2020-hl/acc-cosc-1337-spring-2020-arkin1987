@@ -8,8 +8,8 @@ TEST_CASE("Verify Test Configuration", "verification") {
 
 TEST_CASE("Test class copy w stack variables") {
 
-	Vector v1(5);
-	Vector v2 = v1;
+	Vector<int> v1(5);
+	Vector<int> v2 = v1;
 
 	REQUIRE(v1.Size() == v2.Size());
 	/*
@@ -19,8 +19,8 @@ TEST_CASE("Test class copy w stack variables") {
 }
 TEST_CASE("Test class copy w heap variables")
 {
-	Vector v1(3);
-	Vector v2 = v1;
+	Vector <int> v1(3);
+	Vector<int> v2 = v1;
 
 	REQUIRE(v1.Size() == v2.Size());
 
@@ -44,7 +44,7 @@ TEST_CASE("Test class copy w 2 instances of Vector")
 */
 TEST_CASE("Test vector capactiy with reseve function")
 {
-	Vector v(3);
+	Vector<int> v(3);
 	REQUIRE(v.Capacity() == 3);
 	v.Reserve(6);
 	REQUIRE(v.Capacity() == 6);
@@ -52,7 +52,7 @@ TEST_CASE("Test vector capactiy with reseve function")
 }
 TEST_CASE("Test vector resize element's value copied and initialized")
 {
-	Vector v(3);
+	Vector<int> v(3);
 	v[0] = 1;
 	v[1] = 2;
 	v[2] = 3;
@@ -67,7 +67,7 @@ TEST_CASE("Test vector resize element's value copied and initialized")
 }
 TEST_CASE("Test vector pushback with our default constructor")
 {
-	Vector v;
+	Vector<int> v;
 	v.Push_Back(5);
 	
 	REQUIRE(v.Capacity() == 8);

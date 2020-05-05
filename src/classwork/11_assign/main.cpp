@@ -14,7 +14,7 @@ int main()
 	
 
 
-	Vector v1(3);
+	Vector <int> v1(3);
 	for (size_t i = 0; i < v1.Size(); i++)
 	{
 		std::cout << v1[i] << "\n";
