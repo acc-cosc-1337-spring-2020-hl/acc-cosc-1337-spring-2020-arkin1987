@@ -3,10 +3,9 @@
 
 int main() 
 {
+	
 	display(5);
 
-	int f = factorial(5);
-	std::cout << f;
-	
+	factorial(5);
 	return 0;
 }

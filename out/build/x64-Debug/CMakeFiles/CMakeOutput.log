@@ -50,32 +50,32 @@ The CXX compiler identification is MSVC, found in "C:/Users/Arkin/source/repos/a
 Determining if the C compiler works passed with the following output:
 Change Dir: C:/Users/Arkin/source/repos/acc-cosc-1337-spring-2020-arkin1987/out/build/x64-Debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_20e4e && [1/2] Building C object CMakeFiles\cmTC_20e4e.dir\testCCompiler.c.obj
-[2/2] Linking C executable cmTC_20e4e.exe
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_3badb && [1/2] Building C object CMakeFiles\cmTC_3badb.dir\testCCompiler.c.obj
+[2/2] Linking C executable cmTC_3badb.exe
 
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: C:/Users/Arkin/source/repos/acc-cosc-1337-spring-2020-arkin1987/out/build/x64-Debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_699d8 && [1/2] Building C object CMakeFiles\cmTC_699d8.dir\CMakeCCompilerABI.c.obj
-[2/2] Linking C executable cmTC_699d8.exe
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_de551 && [1/2] Building C object CMakeFiles\cmTC_de551.dir\CMakeCCompilerABI.c.obj
+[2/2] Linking C executable cmTC_de551.exe
 
 
 
 Determining if the CXX compiler works passed with the following output:
 Change Dir: C:/Users/Arkin/source/repos/acc-cosc-1337-spring-2020-arkin1987/out/build/x64-Debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_4b57d && [1/2] Building CXX object CMakeFiles\cmTC_4b57d.dir\testCXXCompiler.cxx.obj
-[2/2] Linking CXX executable cmTC_4b57d.exe
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_c2ddf && [1/2] Building CXX object CMakeFiles\cmTC_c2ddf.dir\testCXXCompiler.cxx.obj
+[2/2] Linking CXX executable cmTC_c2ddf.exe
 
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: C:/Users/Arkin/source/repos/acc-cosc-1337-spring-2020-arkin1987/out/build/x64-Debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_91f54 && [1/2] Building CXX object CMakeFiles\cmTC_91f54.dir\CMakeCXXCompilerABI.cpp.obj
-[2/2] Linking CXX executable cmTC_91f54.exe
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_ebf8d && [1/2] Building CXX object CMakeFiles\cmTC_ebf8d.dir\CMakeCXXCompilerABI.cpp.obj
+[2/2] Linking CXX executable cmTC_ebf8d.exe
 
 
 
